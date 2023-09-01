@@ -12,9 +12,13 @@ body {
 #main {
     wight: 100%;
     padding: 20px;
+    display: block;
     text-align: center;
 }
 
-
+#form{
+    display: none;
+    text-align: center;
+}
 
 
