@@ -14,9 +14,12 @@ buy.addEventListener("click", function(){
 
 order.addEventListener("click", () => {
     document.getElementById("error").innerText = '';
+
+//  Сбор данных  /////////////////////////////////////////////////////////////////////////////
     let name = document.getElementById("user_name").value;
     let email = document.getElementById("user_email").value;
     let phone = document.getElementById("user_phone").value;
+/////////////////////////////////////////////////////////////////////////////////////////////
     if(name.length < 3) {
         document.getElementById("error").innerText = 'Ошибка в имени';
         return;
@@ -30,11 +33,13 @@ order.addEventListener("click", () => {
         return;
     }
 
+//  Отправка данных  ////////////////////////////////////////////////////////////////////////
     let data = {
         name: name,
         email: email,
         phone: phone
     }
     tg.sendData(JSON.stringify(data))
+////////////////////////////////////////////////////////////////////////////////////////////
     tg.close();
 });
