@@ -52,7 +52,7 @@
     <p><a href="/">Main</a></p>
     <div id="main">
         <img src="bot.jpg">
-        <p><h2>Commit 9</h2></p>
+        <p><h2>Commit 10</h2></p>
         <button id="buy">Купить</button>
     </div>
     <form id="form">
@@ -69,15 +69,16 @@
         let buy = document.getElementById("buy");
         let order = document.getElementById("order");
 
-        buy.addEventListener("click", function() => {
-            alert('Дорогу осилит идущий');
+        buy.addEventListener("click", function(){
+            alert('On Click!!!!!!');
             document.getElementById("main").style.display = "none";
             document.getElementById("form").style.display = "block";
 
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + ' ' + tg.initDataUnsafe.user.last_name;
         });
 
-        order.addEventListener("click", function() => {
+        order.addEventListener("click", () => {
+            alert('On Click!!!!!!  In Close/');
             tg.close();
         });
 
