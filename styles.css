@@ -31,7 +31,7 @@ button{
 button:hover{
     height: 52px;
     width: 210px;
-    color: var(--tg-theme-secondary-button-text-color);
+    color: var(--tg-theme-text-color);
     background: var(--tg-theme-secondary-bg-color);
 }
 
