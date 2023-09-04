@@ -24,8 +24,8 @@ body {
 button{
     height: 50px;
     width: 200px;
-    color: var(--tg-theme-button-color);
-    background: var(--tg-theme-button-text-color);
+    color: var(--tg-theme-button-text-color);
+    background: var(--tg-theme-button-color);
 }
 
 button:hover{
